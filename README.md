@@ -13,6 +13,10 @@ This is a small React application scaffolded with Vite. It demonstrates:
 - A production-friendly dev setup using Vite for fast HMR
 - Basic unit tests using Jest and React Testing Library
 
+## Live demo
+
+View the deployed site: https://maon-web-test.vercel.app/
+
 ## Why this repository is a good interview submission
 
 - Self-contained: contains app code, tests, and configs needed to run locally.
@@ -75,6 +79,8 @@ Quick install and run:
 
 - Error & loading states are tested to show robust UI behavior under network variability.
 - Tests mock `axios` to control API responses and assert UI updates.
+
+<!-- Link to live demo -->
 
 ## Decisions & trade-offs
 
