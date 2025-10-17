@@ -1,13 +1,16 @@
-import React from 'react'
+/** @format */
+
+import React from "react";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <div>
-        <footer className="flex items-center justify-center p-4 bg-[#0E0D13] text-white">
-            <p>© 2025 Blott. All rights reserved.</p>
-        </footer>
-    </div>
-  )
-}
+    <footer
+      className="flex items-center justify-center p-4 bg-[#0E0D13] text-white"
+      role="contentinfo">
+      <p>© {year} Blott. All rights reserved.</p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -40,7 +40,7 @@ const Home = () => {
   }
   return (
     <div className="bg-[#0E0D13] min-h-screen text-white px-4 md:px-12 py-8">
-      <h1 className="text-2xl md:text-4xl font-semibold mb-6">News</h1>
+      <h1 className="text-2xl md:text-4xl font-semibold mb-6 px-3">News</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {news.map((item) => (
@@ -49,19 +49,19 @@ const Home = () => {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 hover:bg-[#2A283E] transition overflow-hidden shadow-md flex flex-col">
+            className="p-3 hover:bg-[#2A283E] transition overflow-hidden shadow-md flex md:flex-col flex-row items-center gap-4">
             {item.image ? (
               <img
                 src={item.image}
                 alt={item.headline}
-                className="h-[179px] w-full object-cover"
+                className="md:h-[179px] md:w-full w-[100px] h-[100px] object-cover"
               />
             ) : (
               <div className="h-48 w-full bg-gray-800 flex items-center justify-center text-gray-500 text-sm">
                 No Image
               </div>
             )}
-            <div className="flex flex-col flex-1 py-4">
+            <div className="flex flex-col flex-1 md:py-4">
               <div className="text-sm flex justify-between text-gray-400 w-full ">
                 <div> {item.source} </div>
                 <div>
@@ -72,7 +72,7 @@ const Home = () => {
                   })}
                 </div>
               </div>
-              <h2 className="text-lg font-semibold mb-2 ">
+              <h2 className="text-lg font-semibold mb-2 line-clamp-3 md:line-clamp-none">
                 {item.headline}
               </h2>
             </div>

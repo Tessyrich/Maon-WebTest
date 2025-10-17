@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-center p-4 bg-[#0E0D13]">
+    <nav
+      className="flex items-center justify-center p-4 bg-[#0E0D13]"
+      aria-label="Main navigation">
       <Link
         to="/"
         className="flex items-center space-x-2">
@@ -16,7 +18,7 @@ const Navbar = () => {
           loading="lazy"
         />
       </Link>
-    </div>
+    </nav>
   );
 };
 
