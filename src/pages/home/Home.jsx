@@ -42,7 +42,7 @@ const Home = () => {
     <div className="bg-[#0E0D13] min-h-screen text-white px-4 md:px-12 py-8">
       <h1 className="text-2xl md:text-4xl font-semibold mb-6 px-3">News</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xxl:grid-cols-5 gap-6">
         {news.map((item) => (
           <a
             key={item.id || item.datetime}
@@ -57,7 +57,7 @@ const Home = () => {
                 className="md:h-[179px] md:w-full w-[100px] h-[100px] object-cover"
               />
             ) : (
-              <div className="h-48 w-full bg-gray-800 flex items-center justify-center text-gray-500 text-sm">
+              <div className="md:h-[179px] md:w-full w-[100px] h-[100px] bg-gray-800 flex items-center justify-center text-gray-500 text-sm">
                 No Image
               </div>
             )}
